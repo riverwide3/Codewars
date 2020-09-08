@@ -19,8 +19,7 @@ function findOdd(A) {
 let A = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
 
 // Testing
-try {
-    assert.strictEqual(findOdd(A), 7);
+try {    
     assert.strictEqual(findOdd(A), 5);
     console.log('Passed');
 } catch (error) {
