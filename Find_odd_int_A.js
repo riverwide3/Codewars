@@ -7,7 +7,7 @@ function findOdd(A) {
                 n++;
             }
         }
-        if (n % 2 != 0) {
+        if (n % 2) {
             return A[i];
         }
     }
