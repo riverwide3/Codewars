@@ -16,11 +16,15 @@ function findOdd(A) {
     return 0;
 }
 
-let A = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
+
 
 // Testing
-try {    
+try {
+    let A = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
+    let B = [4, 2, 6, 4, 6, 2, 6];
     assert.strictEqual(findOdd(A), 5);
+    assert.strictEqual(findOdd(B), 6);
+    
     console.log('Passed');
 } catch (error) {
     console.log(error.message);
