@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 function findOdd(A) {
     let n = 0
     for (let i = 0; i < A.length; i++) {
@@ -16,4 +18,11 @@ function findOdd(A) {
 
 let A = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
 
-console.log(findOdd(A));
+// Testing
+try {
+    assert.strictEqual(findOdd(A), 7);
+    assert.strictEqual(findOdd(A), 5);
+    console.log('Passed');
+} catch (error) {
+    console.log(error.message);
+}
