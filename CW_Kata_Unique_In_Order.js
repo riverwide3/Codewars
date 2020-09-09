@@ -1,6 +1,6 @@
-const { assert } = require('assert');
+const assert = require('assert');
 
-var uniqueInOrder = function(iterable){
+var uniqueInOrder = function(iterable_1){
     //your code here - remember iterable can be a string or an array
     let resultArray = [];
 
