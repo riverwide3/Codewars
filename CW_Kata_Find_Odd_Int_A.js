@@ -8,8 +8,7 @@ function findOdd(A) {
             if (A[i] == A[j]) {
                 n++;
             }
-        }
-        console.log(n)
+        }        
         if (n % 2 !== 0) {
             return A[i];
         }
