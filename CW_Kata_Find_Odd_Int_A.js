@@ -9,7 +9,7 @@ function findOdd(A) {
                 n++;
             }
         }
-        if (n % 2) {
+        if (n % 2 !== 0) {
             return A[i];
         }
     }
@@ -22,6 +22,7 @@ try {
     let B = [4, 2, 6, 4, 6, 2, 6];
     assert.strictEqual(findOdd(A), 5);
     assert.strictEqual(findOdd(B), 6);
+    
     
     console.log('Passed');
 } catch (error) {
